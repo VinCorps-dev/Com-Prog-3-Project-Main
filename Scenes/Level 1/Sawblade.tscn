@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://nlkom12uibaf"]
+
+[ext_resource type="Texture2D" uid="uid://dhr8qr4psh2ua" path="res://Assets/Traps And Weapons/Sawblade/sawblade.png" id="1_j7cts"]
+[ext_resource type="Script" uid="uid://c2n6kalqj306j" path="res://Scenes/Level 1/HazardCollision.cs" id="1_l226x"]
+[ext_resource type="Script" uid="uid://cqrsomhw5fcud" path="res://Scenes/Level 1/Hazards/sawblade1.cs" id="2_j7cts"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ooer1"]
+radius = 28.442924
+
+[node name="Sawblade" type="Node2D" unique_id=1965843604]
+
+[node name="sawbladecollision" type="Area2D" parent="." unique_id=480224051]
+script = ExtResource("1_l226x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sawbladecollision" unique_id=642200433]
+z_index = 2
+shape = SubResource("CircleShape2D_ooer1")
+
+[node name="sawblade1" type="Sprite2D" parent="sawbladecollision" unique_id=406729543]
+z_index = 4
+position = Vector2(1, -1.4210855e-14)
+rotation = -6.2831855
+scale = Vector2(1.3177097, 1.152456)
+texture = ExtResource("1_j7cts")
+region_rect = Rect2(67.88663, 71.02291, 61.492218, 137.6254)
+script = ExtResource("2_j7cts")

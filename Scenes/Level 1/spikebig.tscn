@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cmad2aeqhkxml"]
+
+[ext_resource type="Script" uid="uid://c2n6kalqj306j" path="res://Scenes/Level 1/HazardCollision.cs" id="1_0iike"]
+[ext_resource type="Texture2D" uid="uid://bx832y4psjxdc" path="res://Assets/Traps And Weapons/Spikes/Spikebig.png" id="2_5ixwg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nq8uq"]
+size = Vector2(38.5, 20)
+
+[node name="Spikebig" type="Node2D" unique_id=2308690]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1173592983]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_0iike")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1156857650]
+position = Vector2(0.75, 0)
+shape = SubResource("RectangleShape2D_nq8uq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D" unique_id=1352218027]
+position = Vector2(0.24999976, -2)
+scale = Vector2(1.065625, 1.4375)
+texture = ExtResource("2_5ixwg")
