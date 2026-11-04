@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bflntd6qmrvxe" path="res://Scenes/Level 1/Fallingplatformanim.cs" id="2_1im62"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nq8uq"]
-size = Vector2(76, 44)
+size = Vector2(47.5, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1im62"]
 atlas = ExtResource("1_k0d5a")
@@ -71,25 +71,24 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u1w18"]
-size = Vector2(76, 12)
+size = Vector2(46, 12)
 
 [node name="Falling Platform" type="RigidBody2D" unique_id=1133082929]
 script = ExtResource("2_1im62")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1589626353]
-position = Vector2(-2, -1)
+position = Vector2(0.75, -13)
 shape = SubResource("RectangleShape2D_nq8uq")
-metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1043443889]
 texture_filter = 1
-position = Vector2(-1.1015612, 7.999998)
-scale = Vector2(2.5561523, 3.4101565)
+position = Vector2(1, -6)
+scale = Vector2(1.5625, 2.3925781)
 sprite_frames = SubResource("SpriteFrames_nq8uq")
 animation = &"Idle"
 
 [node name="DetectorArea" type="Area2D" parent="." unique_id=850219175]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorArea" unique_id=1882719592]
-position = Vector2(-1, -32)
+position = Vector2(1, -37)
 shape = SubResource("RectangleShape2D_u1w18")

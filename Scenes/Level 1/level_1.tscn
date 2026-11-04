@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cmad2aeqhkxml" path="res://Scenes/Level 1/spikebig.tscn" id="6_vvpoo"]
 [ext_resource type="PackedScene" uid="uid://b7u8pmlr5kr8a" path="res://Scenes/Level 1/checkpoint.tscn" id="7_gk6vi"]
 [ext_resource type="PackedScene" uid="uid://4i786ywfeynm" path="res://Scenes/Level 1/falling_platform.tscn" id="8_cfp1e"]
+[ext_resource type="PackedScene" uid="uid://c0pi3b1ng3dgx" path="res://Scenes/Level 1/Hazards/hazard_nodes.tscn" id="9_6g6qt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrinw"]
 texture = ExtResource("2_vvpoo")
@@ -192,7 +193,7 @@ position = Vector2(88.76218, 458.38327)
 [node name="Main Tiles" type="TileMapLayer" parent="." unique_id=907732324]
 z_index = 2
 texture_filter = 1
-tile_map_data = PackedByteArray("AAAHAAUAAwAAAAAAAAAHAAYAAwAAAAEAAAAHAAcAAwAAAAIAAAAIAAUAAwABAAAAAAAIAAYAAwABAAEAAAAIAAcAAwABAAIAAAAJAAUAAwACAAAAAAAJAAYAAwACAAEAAAAJAAcAAwACAAIAAAAAAAIAAwAFAAAAADAAAAEAAwAFAAEAADAAAAAAAwAFAAIAADABAAIAAwAEAAAAADABAAEAAwAEAAEAADABAAAAAwAEAAIAADACAAIAAwAEAAAAADACAAEAAwAEAAEAADACAAAAAwAEAAIAADADAAIAAwAEAAAAADADAAEAAwAEAAEAADADAAAAAwAEAAIAADAEAAIAAwAEAAAAADAEAAEAAwAEAAEAADAEAAAAAwAEAAIAADAFAAEAAwAEAAEAADAFAAAAAwAEAAIAADAGAAEAAwAEAAEAADAGAAAAAwAEAAIAADAHAAEAAwADAAEAADAHAAAAAwADAAIAADAAAAgAAwAAAAAAAAABAAgAAwABAAAAAAACAAgAAwABAAAAAAADAAgAAwABAAAAAAAEAAgAAwABAAAAAAAFAAgAAwABAAAAAAAGAAgAAwABAAAAAAAHAAgAAwABAAAAAAAIAAgAAwABAAAAAAAJAAgAAwABAAAAAAAKAAgAAwABAAAAAAALAAgAAwABAAAAAAAMAAgAAwABAAAAAAANAAgAAwABAAAAAAAOAAgAAwABAAAAAAAPAAgAAwABAAAAAAAQAAgAAwABAAAAAAARAAgAAwABAAAAAAAVAAgAAwABAAAAAAAWAAgAAwABAAAAAAAXAAgAAwABAAAAAAAYAAgAAwABAAAAAAAZAAgAAwABAAAAAAAaAAgAAwABAAAAAAAbAAgAAwABAAAAAAAcAAgAAwABAAAAAAAdAAgAAwABAAAAAAAFAAIAAwAEAAAAADAGAAIAAwAEAAAAADAHAAIAAwADAAAAADAeAAgAAwABAAAAAAAfAAgAAwABAAAAAAAgAAgAAwABAAAAAAAhAAgAAwABAAAAAAAiAAgAAwABAAAAAAAjAAgAAwABAAAAAAAkAAgAAwABAAAAAAAlAAgAAwABAAAAAAAmAAgAAwABAAAAAAAnAAgAAwABAAAAAAAoAAgAAwABAAAAAAApAAgAAwABAAAAAAAqAAgAAwABAAAAAAArAAgAAwABAAAAAAAsAAgAAwABAAAAAAAtAAgAAwABAAAAAAAuAAgAAwABAAAAAAAvAAgAAwABAAAAAAAwAAgAAwABAAAAAAAxAAgAAwABAAAAAAAyAAgAAwABAAAAAAAzAAgAAwABAAAAAAA0AAgAAwABAAAAAAA1AAgAAwABAAAAAAA2AAgAAwABAAAAAAA3AAgAAwABAAAAAAA4AAgAAwABAAAAAAA5AAgAAwABAAAAAAA6AAgAAwABAAAAAAA7AAgAAwABAAAAAAA8AAgAAwABAAAAAAA9AAgAAwABAAAAAAA+AAgAAwABAAAAAAA/AAgAAwABAAAAAABAAAgAAwABAAAAAABBAAgAAwABAAAAAABCAAgAAwABAAAAAABDAAgAAwABAAAAAABEAAgAAwABAAAAAABFAAgAAwABAAAAAABGAAgAAwABAAAAAABHAAgAAwABAAAAAABIAAgAAwABAAAAAABJAAgAAwABAAAAAABKAAgAAwABAAAAAABLAAgAAwABAAAAAABMAAgAAwABAAAAAABNAAgAAwABAAAAAABOAAgAAwACAAAAAAAVAAUAAwABAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAAAgAAwAAAAAAAAABAAgAAwABAAAAAAACAAgAAwACAAAAAAAFAAUAAwABAAAAAAAKAAQAAwABAAAAAAASAAAAAwADAAAAADARAAAAAwAEAAAAADAQAAAAAwAFAAAAADAVAAQAAwABAAAAAAAeAAIAAwAAAAAAAAAeAAMAAwAAAAEAAAAeAAQAAwAAAAIAAAAiAAMAAwAAAAAAAAAiAAQAAwAAAAEAAAAiAAUAAwAAAAIAAAAjAAMAAwACAAAAAAAjAAQAAwACAAEAAAAjAAUAAwACAAIAAAAoAAAAAwADAAIAADAoAAEAAwADAAEAADAoAAIAAwADAAAAADAnAAAAAwAEAAIAADAnAAEAAwAEAAEAADAnAAIAAwAEAAAAADAmAAAAAwAFAAIAADAmAAEAAwAFAAEAADAmAAIAAwAFAAAAADAtAAQAAwAAAAAAAAAuAAQAAwABAAAAAAAvAAQAAwACAAAAAAA2AAAAAwAAAAAAADA1AAAAAwABAAAAADA0AAAAAwACAAAAADA/AAQAAwACAAAAAAA+AAQAAwAAAAAAAAA=")
 tile_set = SubResource("TileSet_yep5f")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1500752295]
@@ -200,13 +201,14 @@ z_index = 1
 tile_set = SubResource("TileSet_nq8uq")
 
 [node name="Hazard Nodes" parent="." unique_id=1869695662 instance=ExtResource("4_cfp1e")]
-position = Vector2(778.3466, 463.92664)
+position = Vector2(497, 155)
 
 [node name="Hazard Nodes2" parent="." unique_id=390290442 instance=ExtResource("4_cfp1e")]
-position = Vector2(920, 464)
+position = Vector2(497, 268)
 
 [node name="Spikebig" parent="." unique_id=2308690 instance=ExtResource("6_vvpoo")]
-position = Vector2(1040, 501)
+position = Vector2(310, 341)
+rotation = -1.5637938
 
 [node name="Parallax for level 1" parent="." unique_id=1173430658 instance=ExtResource("5_6g6qt")]
 metadata/_edit_lock_ = true
@@ -215,4 +217,121 @@ metadata/_edit_lock_ = true
 position = Vector2(1129, 507)
 
 [node name="Falling Platform" parent="." unique_id=151512446 instance=ExtResource("8_cfp1e")]
-position = Vector2(1254, 344)
+position = Vector2(816, 284)
+
+[node name="Spikebig2" parent="." unique_id=230548772 instance=ExtResource("6_vvpoo")]
+position = Vector2(310, 368)
+rotation = -1.5724618
+
+[node name="Falling Platform2" parent="." unique_id=1133082929 instance=ExtResource("8_cfp1e")]
+position = Vector2(941, 247)
+
+[node name="Spikebig3" parent="." unique_id=566089845 instance=ExtResource("6_vvpoo")]
+position = Vector2(1044, 77.00001)
+rotation = -3.138779
+
+[node name="Spikebig4" parent="." unique_id=1310763832 instance=ExtResource("6_vvpoo")]
+position = Vector2(1121.0001, 77)
+rotation = 3.1321974
+
+[node name="Sawblade" parent="." unique_id=292494488 instance=ExtResource("4_cfp1e")]
+position = Vector2(1147, 216)
+
+[node name="Sawblade2" parent="." unique_id=1965843604 instance=ExtResource("4_cfp1e")]
+position = Vector2(1205, 202)
+
+[node name="Sawblade3" parent="." unique_id=24818193 instance=ExtResource("4_cfp1e")]
+position = Vector2(1086, 228)
+
+[node name="Spikebig5" parent="." unique_id=1536570191 instance=ExtResource("6_vvpoo")]
+position = Vector2(1198, 75.99999)
+rotation = 3.1321974
+
+[node name="Spikebig6" parent="." unique_id=587962008 instance=ExtResource("6_vvpoo")]
+position = Vector2(1159, 77)
+rotation = 3.1321974
+
+[node name="Spikebig7" parent="." unique_id=1201895980 instance=ExtResource("6_vvpoo")]
+position = Vector2(1082, 77)
+rotation = -3.138779
+
+[node name="Falling Platform3" parent="." unique_id=1213250206 instance=ExtResource("8_cfp1e")]
+position = Vector2(1610, 411)
+
+[node name="Falling Platform4" parent="." unique_id=1016646456 instance=ExtResource("8_cfp1e")]
+position = Vector2(1780, 280)
+
+[node name="Spikebig8" parent="." unique_id=497466741 instance=ExtResource("6_vvpoo")]
+position = Vector2(1917.9999, 157.99998)
+rotation = -1.5768427
+
+[node name="Spikebig9" parent="." unique_id=453176229 instance=ExtResource("6_vvpoo")]
+position = Vector2(1918.0001, 194.00002)
+rotation = -1.559128
+
+[node name="Spikebig" parent="Spikebig9" unique_id=1557275462 instance=ExtResource("6_vvpoo")]
+position = Vector2(-33.997673, 0.396649)
+
+[node name="Spikebig" parent="Spikebig9/Spikebig" unique_id=224038655 instance=ExtResource("6_vvpoo")]
+position = Vector2(-35.98588, 1.4199553)
+
+[node name="Spikebig" parent="Spikebig9/Spikebig/Spikebig" unique_id=749296745 instance=ExtResource("6_vvpoo")]
+position = Vector2(-36.997475, 0.43174934)
+
+[node name="Sawblade4" parent="." unique_id=1285305482 instance=ExtResource("4_cfp1e")]
+position = Vector2(1952, 30)
+
+[node name="Spikebig10" parent="." unique_id=1852257300 instance=ExtResource("6_vvpoo")]
+position = Vector2(2195, 183)
+
+[node name="Spikebig11" parent="." unique_id=1466846137 instance=ExtResource("6_vvpoo")]
+position = Vector2(2284, 182)
+
+[node name="Falling Platform5" parent="." unique_id=1743663674 instance=ExtResource("8_cfp1e")]
+position = Vector2(2373, 408)
+
+[node name="Falling Platform6" parent="." unique_id=1835799833 instance=ExtResource("8_cfp1e")]
+position = Vector2(2617, 406)
+
+[node name="Sawblade5" parent="." unique_id=1922372060 instance=ExtResource("4_cfp1e")]
+position = Vector2(2495, 315)
+
+[node name="Sawblade6" parent="." unique_id=709116930 instance=ExtResource("4_cfp1e")]
+position = Vector2(2775, 282)
+
+[node name="Falling Platform7" parent="." unique_id=1996894681 instance=ExtResource("8_cfp1e")]
+position = Vector2(3260, 172)
+
+[node name="Spikebig12" parent="." unique_id=2092324133 instance=ExtResource("6_vvpoo")]
+position = Vector2(3347.9995, 74.00001)
+rotation = 3.137601
+
+[node name="Spikebig" parent="Spikebig12" unique_id=1351486105 instance=ExtResource("6_vvpoo")]
+position = Vector2(-39.004097, 0.84432006)
+
+[node name="Spikebig" parent="Spikebig12/Spikebig" unique_id=561911421 instance=ExtResource("6_vvpoo")]
+position = Vector2(-38.999756, -0.15567869)
+
+[node name="Spikebig" parent="Spikebig12/Spikebig/Spikebig" unique_id=32598978 instance=ExtResource("6_vvpoo")]
+position = Vector2(-37.999702, -0.15168655)
+
+[node name="Spikebig" parent="Spikebig12/Spikebig/Spikebig/Spikebig" unique_id=1254856753 instance=ExtResource("6_vvpoo")]
+position = Vector2(-38.99975, -0.15568161)
+
+[node name="Sawblade7" parent="." unique_id=1490519842 instance=ExtResource("4_cfp1e")]
+position = Vector2(3345, 342)
+
+[node name="Sawblade" parent="Sawblade7" unique_id=884274069 instance=ExtResource("4_cfp1e")]
+position = Vector2(57, 0)
+
+[node name="Sawblade" parent="Sawblade7/Sawblade" unique_id=447290943 instance=ExtResource("4_cfp1e")]
+position = Vector2(58, 0)
+
+[node name="Hazard Nodes" parent="Sawblade7/Sawblade/Sawblade" unique_id=2049002404 instance=ExtResource("9_6g6qt")]
+position = Vector2(58, -1)
+
+[node name="Falling Platform8" parent="." unique_id=251931706 instance=ExtResource("8_cfp1e")]
+position = Vector2(3640, 223)
+
+[node name="Sawblade8" parent="." unique_id=2064593827 instance=ExtResource("4_cfp1e")]
+position = Vector2(3862, 202)
